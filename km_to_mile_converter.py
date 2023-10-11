@@ -5,12 +5,17 @@ def convert():
     km_input = entry_int.get()
     mile_output = km_input * 0.62
     output_string.set(mile_output)
-    
+    window.geometry("450x200")
 
+    
 #window 
 window = ttk.Window(themename='pulse')
 window.title("SimpleConverter")
-window.geometry("450x200")
+window.geometry("450x120")
+
+#icon
+icon = tk.PhotoImage(file="icon.png")
+window.iconphoto(False, icon)
 
 #title
 title_label = ttk.Label(master= window, text="Kilometers to Miles", font="Calibri 24 bold")
